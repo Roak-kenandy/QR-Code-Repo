@@ -13,6 +13,7 @@ const StaffDetailsPage = () => {
       // Directly use atob() to decode Base64 data
       const decodedData = atob(staffDataEncoded);
       const parsedData = JSON.parse(decodedData);
+      console.log(parsedData);
       setStaffData(parsedData);
     }
   }, [location]);
